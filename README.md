@@ -34,6 +34,7 @@ DKAssist relies on `Assistfile.json`, in which you define `envSample` and `requi
 
 With the `Assistfile.json` set, we can use `dk-assist` to our help:
 
+- `dk-assist init` will generate a ready-to-use `Assistfile.json` with empty `requiredFiles` and `envSample` 
 - `dk-assist scaffold` will generate all the `requiredFiles` listed, so you can easily fill them
 - `dk-assist report` will display the status of your repository regarding the required files, informing which of the files need to be filled yet (and which have already been filled)
 

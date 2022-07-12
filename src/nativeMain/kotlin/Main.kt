@@ -1,22 +1,17 @@
 import com.github.ajalt.clikt.core.subcommands
+import commands.Init
 import commands.Report
 import commands.Scaffold
 import model.DKAssist
-import model.DKAssistException
 
-fun main(args: Array<String>) {
-    try {
-        DKAssist().run {
-            loadConfig()
+fun main(args: Array<String>) = DKAssist().run {
+    loadConfig()
 
-            subcommands(
-                Scaffold(config),
-                Report(config)
-            )
+    subcommands(
+        Init(config),
+        Scaffold(config),
+        Report(config)
+    )
 
-            main(args)
-        }
-    } catch (dkae: DKAssistException) {
-        println(dkae.message)
-    }
+    main(args)
 }
