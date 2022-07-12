@@ -31,11 +31,11 @@ jobs:
       - uses: actions/download-artifact@v3
         name: download ubuntu
         with:
-          name: dkassist-ubuntu-latest
+          name: dk-assist-ubuntu-latest
       - uses: actions/download-artifact@v3
         name: download macos
         with:
-          name: dkassist-macos-latest
+          name: dk-assist-macos-latest
 
       - run: mv dk-assist-ubuntu-latest.kexe dk-assist-linux-latest.kexe
 
