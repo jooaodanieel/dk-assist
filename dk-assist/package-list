@@ -7,7 +7,7 @@ $dokka.location:commands/Report///PointingToDeclaration/dk-assist/commands/-rep
 $dokka.location:commands/Report/Report/#model.Config#model.FileSystem/PointingToDeclaration/dk-assist/commands/-report/-report.html
 $dokka.location:commands/Report/run/#/PointingToDeclaration/dk-assist/commands/-report/run.html
 $dokka.location:commands/Scaffold///PointingToDeclaration/dk-assist/commands/-scaffold/index.html
-$dokka.location:commands/Scaffold/Scaffold/#model.Config/PointingToDeclaration/dk-assist/commands/-scaffold/-scaffold.html
+$dokka.location:commands/Scaffold/Scaffold/#model.Config#model.FileSystem/PointingToDeclaration/dk-assist/commands/-scaffold/-scaffold.html
 $dokka.location:commands/Scaffold/run/#/PointingToDeclaration/dk-assist/commands/-scaffold/run.html
 $dokka.location:commands/Status.Done///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}dk-assist/commands/-status/-done/index.html
 $dokka.location:commands/Status.Empty///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}dk-assist/commands/-status/-empty/index.html
