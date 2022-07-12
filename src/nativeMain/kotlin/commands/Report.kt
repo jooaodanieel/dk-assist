@@ -14,8 +14,8 @@ enum class Status(val printableName: String) {
     override fun toString(): String = printableName
 }
 
-typealias Analysis = Map<String, Status>
-typealias MutableAnalysis = MutableMap<String, Status>
+private typealias Analysis = Map<String, Status>
+private typealias MutableAnalysis = MutableMap<String, Status>
 
 class Report(
     private val config: Config,
