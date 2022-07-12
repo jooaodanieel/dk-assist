@@ -29,8 +29,17 @@ cp build/bin/native/releaseExecutable/dk-assist.kexe /path/to/project/root/dk-as
 
 DKAssist relies on `Assistfile.json`, in which you define `envSample` and `requiredFiles`. 
 
+### Commands
+
+With the `Assistfile.json` set, we can use `dk-assist` to our help:
+
+- `./dk-assist scaffold` will generate all the `requiredFiles` listed, so you can easily fill them
+- `./dk-assist report` will display the status of your repository regarding the required files, informing which of the files need to be filled yet (and which have already been filled)
+
 
 ### Configuration
+
+Below we present an example of an `Assistfile.json`
 
 ```json
 {
@@ -56,12 +65,12 @@ DKAssist relies on `Assistfile.json`, in which you define `envSample` and `requi
 }
 ```
 
-In this case, the `requiredFiles` are a
+In this example, the `requiredFiles` are a
 
 - `./config/master.key`: a file Rails projects use for encrypting credentials, and that **should not** be tracked by VCS
 - `./.env`: the definition of the env-vars
 
-In more details, `Assistfile.json` informs a sample of the `.env` file
+In more details, the example `Assistfile.json` informs a sample of the `.env` file
 
 - `DATABASE_CONNECTION_URL` which has no description since its very readable and clear
 - `CORS_ENABLED` to set the list of hosts that are allowed to request; its default is `"*"`
@@ -69,13 +78,6 @@ In more details, `Assistfile.json` informs a sample of the `.env` file
 As we can see, both `requiredFiles` and `envSample` elements require a `name`, and accept a `description` as documentation.
 Also, `envSample` elements accept a `default` value.
 
-
-### Commands
-
-With the `Assistfile.json` set, we can use `dk-assist` to our help:
-
-- `./dk-assist scaffold` will generate all the `requiredFiles` listed, so you can easily fill them
-- `./dk-assist report` will display the status of your repository regarding the required files, informing which of the files need to be filled yet (and which have already been filled)
 
 
 ## Contributing
@@ -85,9 +87,8 @@ Please refer to [CONTRIBUTING.md][1]
 
 ## License
 
-
-
 This project is licensed under the [MIT License][2]
+
 
 
 
