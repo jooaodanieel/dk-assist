@@ -6,13 +6,15 @@ import model.DKAssistException
 
 fun main(args: Array<String>) {
     try {
-        DKAssist().let {
-            it.subcommands(
-                Scaffold(it.config),
-                Report(it.config)
+        DKAssist().run {
+            loadConfig()
+
+            subcommands(
+                Scaffold(config),
+                Report(config)
             )
 
-            it.main(args)
+            main(args)
         }
     } catch (dkae: DKAssistException) {
         println(dkae.message)

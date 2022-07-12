@@ -6,6 +6,8 @@ import platform.FileSystemImpl
 
 interface ConfigLoader {
     var config: Config
+
+    fun loadConfig()
 }
 
 class AssistfileLoader : ConfigLoader {
@@ -16,13 +18,13 @@ class AssistfileLoader : ConfigLoader {
 
     override lateinit var config: Config
 
-    init {
-        loadConfig()
-    }
-
-    private fun loadConfig() {
-        config = FileSystemImpl()
-            .readFile(CONFIG_FILE_NAME)
-            .let { Json.decodeFromString(it) }
+    override fun loadConfig() {
+        config = try {
+            FileSystemImpl()
+                .readFile(CONFIG_FILE_NAME)
+                .let { Json.decodeFromString(it) }
+        } catch (e: Exception) {
+            Config.empty()
+        }
     }
 }

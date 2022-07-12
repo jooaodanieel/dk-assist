@@ -19,4 +19,13 @@ data class EnvVar(
 data class Config(
     val requiredFiles: Set<RequiredFile>,
     val envSample: Set<EnvVar>
-)
+) {
+    companion object {
+        fun empty(): Config = Config(
+            requiredFiles = emptySet(),
+            envSample = emptySet()
+        )
+    }
+
+    fun isNotEmpty(): Boolean = requiredFiles.isNotEmpty() || envSample.isNotEmpty()
+}

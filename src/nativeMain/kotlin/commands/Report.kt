@@ -21,6 +21,7 @@ class Report(
     private val config: Config,
     private val fs: FileSystem = FileSystemImpl()
 ) : CliktCommand(help = "Displays which of the requiredFiles need to be filled yet") {
+
     override fun run() = analyze().let { report(it) }
 
     private fun report(analysis: Analysis) {

@@ -10,6 +10,7 @@ class Scaffold(
     private val config: Config,
     private val fs: FileSystem = FileSystemImpl()
 ) : CliktCommand(help = "Generates all the requiredFiles") {
+
     override fun run() {
         config.requiredFiles
             .forEach { (path, desc) ->
