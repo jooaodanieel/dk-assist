@@ -3,6 +3,9 @@ $dokka.linkExtension:html
 $dokka.location:////PointingToDeclaration/dk-assist/[root]/index.html
 $dokka.location://main/#kotlin.Array[kotlin.String]/PointingToDeclaration/dk-assist/[root]/main.html
 $dokka.location:commands////PointingToDeclaration/dk-assist/commands/index.html
+$dokka.location:commands/Init///PointingToDeclaration/dk-assist/commands/-init/index.html
+$dokka.location:commands/Init/Init/#model.Config#model.FileSystem/PointingToDeclaration/dk-assist/commands/-init/-init.html
+$dokka.location:commands/Init/run/#/PointingToDeclaration/dk-assist/commands/-init/run.html
 $dokka.location:commands/Report///PointingToDeclaration/dk-assist/commands/-report/index.html
 $dokka.location:commands/Report/Report/#model.Config#model.FileSystem/PointingToDeclaration/dk-assist/commands/-report/-report.html
 $dokka.location:commands/Report/run/#/PointingToDeclaration/dk-assist/commands/-report/run.html
@@ -21,12 +24,17 @@ $dokka.location:model/AssistfileLoader.Companion/CONFIG_FILE_NAME/#/PointingToDe
 $dokka.location:model/AssistfileLoader///PointingToDeclaration/dk-assist/model/-assistfile-loader/index.html
 $dokka.location:model/AssistfileLoader/AssistfileLoader/#/PointingToDeclaration/dk-assist/model/-assistfile-loader/-assistfile-loader.html
 $dokka.location:model/AssistfileLoader/config/#/PointingToDeclaration/dk-assist/model/-assistfile-loader/config.html
+$dokka.location:model/AssistfileLoader/loadConfig/#/PointingToDeclaration/dk-assist/model/-assistfile-loader/load-config.html
+$dokka.location:model/Config.Companion///PointingToDeclaration/dk-assist/model/-config/-companion/index.html
+$dokka.location:model/Config.Companion/empty/#/PointingToDeclaration/dk-assist/model/-config/-companion/empty.html
 $dokka.location:model/Config///PointingToDeclaration/dk-assist/model/-config/index.html
 $dokka.location:model/Config/Config/#kotlin.collections.Set[model.RequiredFile]#kotlin.collections.Set[model.EnvVar]/PointingToDeclaration/dk-assist/model/-config/-config.html
 $dokka.location:model/Config/envSample/#/PointingToDeclaration/dk-assist/model/-config/env-sample.html
+$dokka.location:model/Config/isNotEmpty/#/PointingToDeclaration/dk-assist/model/-config/is-not-empty.html
 $dokka.location:model/Config/requiredFiles/#/PointingToDeclaration/dk-assist/model/-config/required-files.html
 $dokka.location:model/ConfigLoader///PointingToDeclaration/dk-assist/model/-config-loader/index.html
 $dokka.location:model/ConfigLoader/config/#/PointingToDeclaration/dk-assist/model/-config-loader/config.html
+$dokka.location:model/ConfigLoader/loadConfig/#/PointingToDeclaration/dk-assist/model/-config-loader/load-config.html
 $dokka.location:model/DKAssist///PointingToDeclaration/dk-assist/model/-d-k-assist/index.html
 $dokka.location:model/DKAssist/DKAssist/#model.ConfigLoader/PointingToDeclaration/dk-assist/model/-d-k-assist/-d-k-assist.html
 $dokka.location:model/DKAssist/run/#/PointingToDeclaration/dk-assist/model/-d-k-assist/run.html
