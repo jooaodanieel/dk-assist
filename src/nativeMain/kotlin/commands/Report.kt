@@ -24,13 +24,24 @@ class Report(
     override fun run() = analyze().let { report(it) }
 
     private fun report(analysis: Analysis) {
+        println("DKAssist Report")
         analysis.keys
             .groupBy { analysis[it]!! }
             .forEach { (status, files) ->
-                println("$status")
-                files.forEach { println("    - $it") }
+                val color = selectColor(status)
+
+                val reset = "\u001b[0m"
+
+                println("$color- $status $reset")
+                files.forEach { println("$color    $it$reset") }
                 println()
             }
+    }
+
+    private fun selectColor(status: Status) = when (status) {
+        Status.NotCreated -> "\u001b[31m"
+        Status.Empty -> "\u001b[33m"
+        else -> "\u001b[32m"
     }
 
     private fun analyze(): Analysis {
