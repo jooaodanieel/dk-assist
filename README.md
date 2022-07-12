@@ -11,8 +11,9 @@ as well as provide a check-list of other files needed to build the application.
 
 First, ensure you have `libcrypt.so.1` available in your system.
 
-Then head to [releases][releases] page, download the latest `dk-assist-<OS>-latest.kexe` and store into your project's
-root directory. Just make sure it is executable :) And we suggest you call it `dk-assist`
+Then head to [releases][releases] page, download the latest `dk-assist-<OS>-latest.kexe` and store into within your `$PATH`.
+We suggest you call it `dk-assist`, and make sure it is executable :) You can also store it in a project's roots directory,
+but then you'll have to call it `./dk-assist` instead of calling it directly.
 
 
 If you're interested in building it manually,
@@ -21,8 +22,8 @@ If you're interested in building it manually,
 # build the DKAssist executable
 ./gradlew build
 
-# copy to your project's root directory
-cp build/bin/native/releaseExecutable/dk-assist.kexe /path/to/project/root/dk-assist
+# copy to your desired directory
+cp build/bin/native/releaseExecutable/dk-assist.kexe /path/to/dk-assist
 ```
 
 ## How to use
@@ -33,8 +34,8 @@ DKAssist relies on `Assistfile.json`, in which you define `envSample` and `requi
 
 With the `Assistfile.json` set, we can use `dk-assist` to our help:
 
-- `./dk-assist scaffold` will generate all the `requiredFiles` listed, so you can easily fill them
-- `./dk-assist report` will display the status of your repository regarding the required files, informing which of the files need to be filled yet (and which have already been filled)
+- `dk-assist scaffold` will generate all the `requiredFiles` listed, so you can easily fill them
+- `dk-assist report` will display the status of your repository regarding the required files, informing which of the files need to be filled yet (and which have already been filled)
 
 
 ### Configuration
