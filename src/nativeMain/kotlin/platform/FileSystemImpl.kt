@@ -5,6 +5,7 @@ import model.FileSystem
 import okio.Path.Companion.toPath
 import okio.buffer
 import okio.use
+import platform.posix.system
 
 class FileSystemImpl : FileSystem {
     override fun readFile(fileName: String): String {
@@ -30,9 +31,15 @@ class FileSystemImpl : FileSystem {
     override fun writeFile(fileName: String, content: String) {
         val filePath = fileName.toPath()
 
+        system("mkdir -p ${filePath.parent}")
+
         okio.FileSystem.SYSTEM
             .sink(filePath)
             .buffer()
             .use { it.writeUtf8(content) }
+
+        val color = "\u001b[33m"
+        val reset = "\u001b[0m"
+        println("${color}Created $fileName$reset")
     }
 }
