@@ -1,0 +1,49 @@
+name: Create a new GitHub Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+
+jobs:
+  build-non-win:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: fwilhe2/setup-kotlin@main
+        with:
+          install-native: true
+      - run: ./gradlew build
+      - run: mv build/bin/native/releaseExecutable/dk-assist.kexe build/bin/native/releaseExecutable/dk-assist-${{ matrix.os }}.kexe
+      - uses: actions/upload-artifact@v3
+        with: 
+          name: dk-assist-${{ matrix.os }}
+          path: build/bin/native/releaseExecutable/dk-assist-${{ matrix.os }}.kexe
+
+  release:
+    runs-on: ubuntu-latest
+    needs: [build-non-win]
+    steps:
+      - uses: actions/download-artifact@v3
+        name: download ubuntu
+        with:
+          name: dkassist-ubuntu-latest
+      - uses: actions/download-artifact@v3
+        name: download macos
+        with:
+          name: dkassist-macos-latest
+
+      - run: mv dk-assist-ubuntu-latest.kexe dk-assist-linux-latest.kexe
+
+      - uses: marvinpinto/action-automatic-releases@latest
+        with:
+          repo_token: ${{ secrets.RELEASE_TOKEN }}
+          title: DKAssist
+          prerelease: false
+          files: |
+            dk-assist-macos-latest.kexe
+            dk-assist-linux-latest.kexe

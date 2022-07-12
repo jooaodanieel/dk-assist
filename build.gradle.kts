@@ -1,8 +1,11 @@
 val kotlinx_serialization_version: String by project
+val clikt_version: String by project
+val okio_version: String by project
 
 plugins {
     kotlin("multiplatform") version "1.7.10"
     kotlin("plugin.serialization") version "1.7.10"
+    id("org.jetbrains.dokka") version "1.7.0"
 }
 
 group = "me.joaofran"
@@ -36,6 +39,8 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$kotlinx_serialization_version")
+                implementation("com.github.ajalt.clikt:clikt:$clikt_version")
+                implementation("com.squareup.okio:okio:$okio_version")
             }
         }
     }
