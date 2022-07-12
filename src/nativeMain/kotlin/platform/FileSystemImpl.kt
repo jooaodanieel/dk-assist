@@ -1,6 +1,6 @@
 package platform
 
-import model.ConfigNotFoundException
+import model.FileNotFoundException
 import model.FileSystem
 import okio.Path.Companion.toPath
 import okio.buffer
@@ -23,7 +23,7 @@ class FileSystemImpl : FileSystem {
 
             return content
         } catch (_: okio.FileNotFoundException) {
-            throw ConfigNotFoundException()
+            throw FileNotFoundException(fileName)
         }
     }
 
