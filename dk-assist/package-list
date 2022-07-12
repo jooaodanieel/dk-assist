@@ -1,0 +1,51 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:////PointingToDeclaration/dk-assist/[root]/index.html
+$dokka.location://main/#kotlin.Array[kotlin.String]/PointingToDeclaration/dk-assist/[root]/main.html
+$dokka.location:commands////PointingToDeclaration/dk-assist/commands/index.html
+$dokka.location:commands/Report///PointingToDeclaration/dk-assist/commands/-report/index.html
+$dokka.location:commands/Report/Report/#model.Config/PointingToDeclaration/dk-assist/commands/-report/-report.html
+$dokka.location:commands/Report/run/#/PointingToDeclaration/dk-assist/commands/-report/run.html
+$dokka.location:commands/Scaffold///PointingToDeclaration/dk-assist/commands/-scaffold/index.html
+$dokka.location:commands/Scaffold/Scaffold/#model.Config/PointingToDeclaration/dk-assist/commands/-scaffold/-scaffold.html
+$dokka.location:commands/Scaffold/run/#/PointingToDeclaration/dk-assist/commands/-scaffold/run.html
+$dokka.location:model////PointingToDeclaration/dk-assist/model/index.html
+$dokka.location:model/AssistfileLoader.Companion///PointingToDeclaration/dk-assist/model/-assistfile-loader/-companion/index.html
+$dokka.location:model/AssistfileLoader.Companion/CONFIG_FILE_NAME/#/PointingToDeclaration/dk-assist/model/-assistfile-loader/-companion/-c-o-n-f-i-g_-f-i-l-e_-n-a-m-e.html
+$dokka.location:model/AssistfileLoader///PointingToDeclaration/dk-assist/model/-assistfile-loader/index.html
+$dokka.location:model/AssistfileLoader/AssistfileLoader/#/PointingToDeclaration/dk-assist/model/-assistfile-loader/-assistfile-loader.html
+$dokka.location:model/AssistfileLoader/config/#/PointingToDeclaration/dk-assist/model/-assistfile-loader/config.html
+$dokka.location:model/Config///PointingToDeclaration/dk-assist/model/-config/index.html
+$dokka.location:model/Config/Config/#kotlin.collections.Set[model.RequiredFile]#kotlin.collections.Set[model.EnvVar]/PointingToDeclaration/dk-assist/model/-config/-config.html
+$dokka.location:model/Config/envSample/#/PointingToDeclaration/dk-assist/model/-config/env-sample.html
+$dokka.location:model/Config/requiredFiles/#/PointingToDeclaration/dk-assist/model/-config/required-files.html
+$dokka.location:model/ConfigLoader///PointingToDeclaration/dk-assist/model/-config-loader/index.html
+$dokka.location:model/ConfigLoader/config/#/PointingToDeclaration/dk-assist/model/-config-loader/config.html
+$dokka.location:model/ConfigNotFoundException///PointingToDeclaration/dk-assist/model/-config-not-found-exception/index.html
+$dokka.location:model/ConfigNotFoundException/ConfigNotFoundException/#/PointingToDeclaration/dk-assist/model/-config-not-found-exception/-config-not-found-exception.html
+$dokka.location:model/DKAssist///PointingToDeclaration/dk-assist/model/-d-k-assist/index.html
+$dokka.location:model/DKAssist/DKAssist/#model.ConfigLoader/PointingToDeclaration/dk-assist/model/-d-k-assist/-d-k-assist.html
+$dokka.location:model/DKAssist/run/#/PointingToDeclaration/dk-assist/model/-d-k-assist/run.html
+$dokka.location:model/DKAssistException///PointingToDeclaration/dk-assist/model/-d-k-assist-exception/index.html
+$dokka.location:model/DKAssistException/DKAssistException/#kotlin.String/PointingToDeclaration/dk-assist/model/-d-k-assist-exception/-d-k-assist-exception.html
+$dokka.location:model/EnvVar///PointingToDeclaration/dk-assist/model/-env-var/index.html
+$dokka.location:model/EnvVar/EnvVar/#kotlin.String#kotlin.String?#kotlin.String?/PointingToDeclaration/dk-assist/model/-env-var/-env-var.html
+$dokka.location:model/EnvVar/default/#/PointingToDeclaration/dk-assist/model/-env-var/default.html
+$dokka.location:model/EnvVar/description/#/PointingToDeclaration/dk-assist/model/-env-var/description.html
+$dokka.location:model/EnvVar/name/#/PointingToDeclaration/dk-assist/model/-env-var/name.html
+$dokka.location:model/FileSystem///PointingToDeclaration/dk-assist/model/-file-system/index.html
+$dokka.location:model/FileSystem/readFile/#kotlin.String/PointingToDeclaration/dk-assist/model/-file-system/read-file.html
+$dokka.location:model/FileSystem/writeFile/#kotlin.String#kotlin.String/PointingToDeclaration/dk-assist/model/-file-system/write-file.html
+$dokka.location:model/RequiredFile///PointingToDeclaration/dk-assist/model/-required-file/index.html
+$dokka.location:model/RequiredFile/RequiredFile/#kotlin.String#kotlin.String?/PointingToDeclaration/dk-assist/model/-required-file/-required-file.html
+$dokka.location:model/RequiredFile/description/#/PointingToDeclaration/dk-assist/model/-required-file/description.html
+$dokka.location:model/RequiredFile/path/#/PointingToDeclaration/dk-assist/model/-required-file/path.html
+$dokka.location:platform////PointingToDeclaration/dk-assist/platform/index.html
+$dokka.location:platform/FileSystemImpl///PointingToDeclaration/dk-assist/platform/-file-system-impl/index.html
+$dokka.location:platform/FileSystemImpl/FileSystemImpl/#/PointingToDeclaration/dk-assist/platform/-file-system-impl/-file-system-impl.html
+$dokka.location:platform/FileSystemImpl/readFile/#kotlin.String/PointingToDeclaration/dk-assist/platform/-file-system-impl/read-file.html
+$dokka.location:platform/FileSystemImpl/writeFile/#kotlin.String#kotlin.String/PointingToDeclaration/dk-assist/platform/-file-system-impl/write-file.html
+commands
+model
+platform
+
