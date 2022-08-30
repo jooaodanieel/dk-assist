@@ -48,6 +48,7 @@ $dokka.location:model/EnvVar/name/#/PointingToDeclaration/dk-assist/model/-env-
 $dokka.location:model/FileNotFoundException///PointingToDeclaration/dk-assist/model/-file-not-found-exception/index.html
 $dokka.location:model/FileNotFoundException/FileNotFoundException/#kotlin.String/PointingToDeclaration/dk-assist/model/-file-not-found-exception/-file-not-found-exception.html
 $dokka.location:model/FileSystem///PointingToDeclaration/dk-assist/model/-file-system/index.html
+$dokka.location:model/FileSystem/fileExists/#kotlin.String/PointingToDeclaration/dk-assist/model/-file-system/file-exists.html
 $dokka.location:model/FileSystem/readFile/#kotlin.String/PointingToDeclaration/dk-assist/model/-file-system/read-file.html
 $dokka.location:model/FileSystem/writeFile/#kotlin.String#kotlin.String/PointingToDeclaration/dk-assist/model/-file-system/write-file.html
 $dokka.location:model/RequiredFile///PointingToDeclaration/dk-assist/model/-required-file/index.html
@@ -57,6 +58,7 @@ $dokka.location:model/RequiredFile/path/#/PointingToDeclaration/dk-assist/model
 $dokka.location:platform////PointingToDeclaration/dk-assist/platform/index.html
 $dokka.location:platform/FileSystemImpl///PointingToDeclaration/dk-assist/platform/-file-system-impl/index.html
 $dokka.location:platform/FileSystemImpl/FileSystemImpl/#/PointingToDeclaration/dk-assist/platform/-file-system-impl/-file-system-impl.html
+$dokka.location:platform/FileSystemImpl/fileExists/#kotlin.String/PointingToDeclaration/dk-assist/platform/-file-system-impl/file-exists.html
 $dokka.location:platform/FileSystemImpl/readFile/#kotlin.String/PointingToDeclaration/dk-assist/platform/-file-system-impl/read-file.html
 $dokka.location:platform/FileSystemImpl/writeFile/#kotlin.String#kotlin.String/PointingToDeclaration/dk-assist/platform/-file-system-impl/write-file.html
 commands
