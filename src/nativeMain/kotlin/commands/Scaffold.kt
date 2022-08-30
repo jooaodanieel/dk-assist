@@ -37,6 +37,8 @@ class Scaffold(
     }
 
     private fun generateRegularFile(path: String, description: String?) {
+        if (fs.fileExists(path)) return
+
         val text = placeholder(description)
         fs.writeFile(path, text)
     }

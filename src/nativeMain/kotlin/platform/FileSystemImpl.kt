@@ -8,6 +8,11 @@ import okio.use
 import platform.posix.system
 
 class FileSystemImpl : FileSystem {
+    override fun fileExists(filename: String): Boolean {
+        val filePath = filename.toPath()
+        return okio.FileSystem.SYSTEM.exists(filePath)
+    }
+
     override fun readFile(fileName: String): String {
         val filePath = fileName.toPath()
 
