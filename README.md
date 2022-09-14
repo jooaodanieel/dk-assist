@@ -1,5 +1,7 @@
 # DKAssist
 
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/jooaodanieel/dk-assist/Create%20a%20new%20GitHub%20Release?style=for-the-badge) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/jooaodanieel/dk-assist?style=for-the-badge)  ![GitHub all releases](https://img.shields.io/github/downloads/jooaodanieel/dk-assist/total?color=orange&style=for-the-badge)
+
 DKAssist is a tool that helps devs to set up a repository with its configs, such as `.env` files.
 
 With a simple `Assistfile.json`, you can document the env-vars with name, a brief description, and default values,
