@@ -1,17 +1,14 @@
-package commands
+package core.services
 
-import com.github.ajalt.clikt.core.CliktCommand
-import model.Config
-import model.EnvVar
-import model.FileSystem
-import platform.FileSystemImpl
+import core.model.Config
+import core.model.EnvVar
+import core.model.FileSystem
 
-class Scaffold(
+class ScaffoldRequiredFiles(
     private val config: Config,
-    private val fs: FileSystem = FileSystemImpl()
-) : CliktCommand(help = "Generates all the requiredFiles") {
-
-    override fun run() {
+    private val fs: FileSystem
+) {
+    fun scaffold() {
         config.requiredFiles
             .forEach { (path, desc) ->
                 val isDotEnv = path.matches(".*env\$".toRegex())

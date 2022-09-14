@@ -1,10 +1,8 @@
-package commands
+package core.services
 
-import com.github.ajalt.clikt.core.CliktCommand
-import model.Config
-import model.FileNotFoundException
-import model.FileSystem
-import platform.FileSystemImpl
+import core.model.Config
+import core.model.FileNotFoundException
+import core.model.FileSystem
 
 enum class Status(val printableName: String) {
     NotCreated("not created"),
@@ -17,12 +15,11 @@ enum class Status(val printableName: String) {
 private typealias Analysis = Map<String, Status>
 private typealias MutableAnalysis = MutableMap<String, Status>
 
-class Report(
+class ReportConfigurationStatus(
     private val config: Config,
-    private val fs: FileSystem = FileSystemImpl()
-) : CliktCommand(help = "Displays which of the requiredFiles need to be filled yet") {
-
-    override fun run() = analyze().let { report(it) }
+    private val fs: FileSystem
+) {
+    fun reportStatus() = analyze().let { report(it) }
 
     private fun report(analysis: Analysis) {
         println("DKAssist Report")

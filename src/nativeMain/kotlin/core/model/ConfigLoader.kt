@@ -1,8 +1,8 @@
-package model
+package core.model
 
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
-import platform.FileSystemImpl
+import application.platform.FileSystemImpl
 
 interface ConfigLoader {
     var config: Config

@@ -1,4 +1,4 @@
-package model
+package core.model
 
 import com.github.ajalt.clikt.core.CliktCommand
 

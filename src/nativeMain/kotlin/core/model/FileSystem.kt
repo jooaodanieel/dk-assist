@@ -1,4 +1,4 @@
-package model
+package core.model
 
 interface FileSystem {
     fun readFile(fileName: String): String

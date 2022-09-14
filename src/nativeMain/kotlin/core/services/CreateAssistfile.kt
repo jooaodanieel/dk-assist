@@ -1,19 +1,16 @@
-package commands
+package core.services
 
-import com.github.ajalt.clikt.core.CliktCommand
+import core.model.AssistfileLoader
+import core.model.Config
+import core.model.FileSystem
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
-import model.AssistfileLoader
-import model.Config
-import model.FileSystem
-import platform.FileSystemImpl
 
-class Init(
+class CreateAssistfile(
     private val config: Config,
-    private val fs: FileSystem = FileSystemImpl()
-) : CliktCommand(help = "Spawns an empty Assistfile.json for you") {
-
-    override fun run() {
+    private val fs: FileSystem
+) {
+    fun create() {
         if (config.isNotEmpty()) return
 
         Config.empty().let {

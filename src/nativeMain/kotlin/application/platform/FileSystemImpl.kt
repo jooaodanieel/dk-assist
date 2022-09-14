@@ -1,7 +1,7 @@
-package platform
+package application.platform
 
-import model.FileNotFoundException
-import model.FileSystem
+import core.model.FileNotFoundException
+import core.model.FileSystem
 import okio.Path.Companion.toPath
 import okio.buffer
 import okio.use

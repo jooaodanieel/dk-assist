@@ -1,8 +1,8 @@
 import com.github.ajalt.clikt.core.subcommands
-import commands.Init
-import commands.Report
-import commands.Scaffold
-import model.DKAssist
+import application.commands.Init
+import application.commands.Report
+import application.commands.Scaffold
+import core.model.DKAssist
 
 fun main(args: Array<String>) = DKAssist().run {
     loadConfig()
