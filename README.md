@@ -9,7 +9,19 @@ as well as provide a check-list of other files needed to build the application.
 
 ## Installation
 
+There are three methods for installing dk-assist
+
 > Windows users, help us! We couldn't set the releases for Windows :(
+
+### 1) AUR
+
+dk-assist is available at the [Arch User Repository][aur], so you can easily install via `yay`
+
+```bash
+yay -S dk-assist-git
+```
+
+### 2) GitHub Releases
 
 First, ensure you have `libcrypt.so.1` available in your system.
 
@@ -17,6 +29,8 @@ Then head to [releases][releases] page, download the latest `dk-assist-<OS>-late
 We suggest you call it `dk-assist`, and make sure it is executable :) You can also store it in a project's roots directory,
 but then you'll have to call it `./dk-assist` instead of calling it directly.
 
+
+### 3) Manual build
 
 If you're interested in building it manually,
 
@@ -100,4 +114,5 @@ This project is licensed under the [MIT License][2]
 [2]: https://opensource.org/licenses/MIT
 
 
+[aur]: https://aur.archlinux.org/packages/dk-assist-git
 [releases]: https://github.com/jooaodanieel/dk-assist/releases
